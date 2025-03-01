@@ -278,6 +278,12 @@
 
 		<section>
 			<h2>Design Process, Design Decisions and Reflections</h2>
+        
+            <div style="border: 2px solid #ffcc00; padding: 10px; background-color: #ffffe0;">
+                <h3>Data Transformations</h3>
+                <p><strong>To prepare the COVID-19 dataset for the radial bar chart, several key transformations were applied to ensure clarity and accuracy in visualization. First, a 7-day moving average was computed for new cases, to smooth out daily fluctuations and highlight broader trends. The data was then aggregated by week and year, extracting each week number (1-52) and corresponding year to structure the timeline. Each week was converted into an angular position (degrees), allowing for proper alignment in the radial format, ensuring cyclical patterns were preserved. Additionally, distinct colors were assigned to each year, enabling easy differentiation between time periods. These transformations collectively ensured that the radial bar chart effectively conveyed seasonal infection trends, pandemic waves, and year-to-year comparisons while maintaining a visually compelling and functionally accurate design.</strong></p>
+            </div>
+
 
             <p>
         The choice to implement a radial bar chart rather than a linear or spiral visualization (as in the sketches) was driven by creating a compelling yet functionally clear representation of COVID-19 trends over time. Traditional time-series line charts, while effective for direct numerical comparisons, can sometimes fail to convey the repetitive, seasonal nature of pandemics, where peaks and valleys recur in similar timeframes each year. The radial format takes advantage of the human tendency to recognize circular and cyclical patterns, making it easier to compare waves of infection across different years. Instead of forcing the viewer to scan horizontally along a timeline, the radial structure compresses time into a visually compact, continuous loop, preserving both temporal progression and periodical relationships in a single, glanceable format. This is a key, visually striking aspect of the NYT visualization that I wanted to preserve. The previous ideation stages were helpful in this regard.
