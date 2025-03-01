@@ -163,55 +163,96 @@
          In this section, I take the best 3 ideas from the initial sketch ideation stage, and refine them into more detailed sketches. I will also provide a brief rationale for each sketch, explaining why I think it is a good idea for the dataset.
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./imgs/final_1.jpeg" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    Radial Bar Chart (Circular Histogram)
 				</figcaption>
 			</figure>
 
 			<p>
-				Design Rationale for Sketch 1:
-			</p>
+                <strong>Concept:</strong>
+                <p>Instead of a spiral, this visualization uses a radial bar chart, where each bar represents weekly or monthly COVID-19 cases, radiating outward from the center. The height of the bars corresponds to case counts, with higher case numbers extending further from the core. Each segment can be color-coded based on the severity of cases, making peaks stand out.</p>
 
-			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
-			</ul>
+                <strong>Strengths:</strong>
+                <ul>
+                    <li>Maintains a visually striking circular format while improving clarity over the spiral.</li>
+                    <li>Directly encodes case counts with bar height, making it easier to compare than a spiral path.</li>
+                    <li>Preserves the cyclical nature of outbreaks, reinforcing the idea of repeating waves of infection.</li>
+                    <li>Better separation of time periods, avoiding the overcrowding issue of the spiral’s inner rings.</li>
+                </ul>
+
+                <strong>Weaknesses:</strong>
+                <ul>
+                    <li>Comparing bars across different sections of the circle may still be challenging, as readers must visually estimate heights.</li>
+                    <li>Radial layouts are less familiar than traditional linear or bar charts, meaning some viewers might need extra guidance (e.g., clear legends, annotations).</li>
+                    <li>Overlapping labels could be an issue, especially for months with lower case counts closer to the center.</li>
+                </ul>
+
+                <strong>Why This is an Improvement Over the Spiral:</strong>
+                <p>While it retains the engaging circular aesthetic, it resolves one of the biggest flaws of the spiral—the loss of readability in the center. By keeping the bars distinct and clearly separated by time, it avoids the distortion introduced by the curved spiral path.</p>
+			</p>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./imgs/final_2.jpeg" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    Heatmap Calendar
 				</figcaption>
 			</figure>
 
 			<p>
-				Design Rationale for Sketch 2:
+                <strong>Concept:</strong>
+                <p>A calendar-based heatmap where each square represents a day or week, colored based on the intensity of COVID-19 cases. The darkest colors represent peak infection periods, while lighter colors indicate lower case counts.</p>
+
+                <strong>Strengths:</strong>
+                <ul>
+                    <li>Familiar and intuitive—people are used to reading calendars, so they can quickly recognize trends over time.</li>
+                    <li>Highly effective for identifying patterns like seasonality or weekly trends (e.g., were cases always rising on weekends?).</li>
+                    <li>Easy to annotate key events like policy changes, holidays, or vaccine rollouts.</li>
+                    <li>Doesn’t distort data visually—each time period is given equal space, avoiding the compression issues of the spiral.</li>
+                </ul>
+
+                <strong>Weaknesses:</strong>
+                <ul>
+                    <li>Less effective for high-level trend comparisons—while it shows when peaks happened, it may not be as effective at comparing the scale of peaks over time.</li>
+                    <li>Relies on color perception, which may not be accessible for colorblind users unless a thoughtful color palette is chosen.</li>
+                    <li>Can be overwhelming if the dataset is too granular (e.g., daily cases for multiple years). A weekly or monthly aggregation might be necessary.</li>
+                </ul>
+
+                <strong>Why This is an Improvement Over the Spiral:</strong>
+                <p>Unlike the spiral, which forces readers to decipher a complex curved structure, the calendar is instantly recognizable and doesn’t require learning a new format. Readers can easily pinpoint specific dates, making it a great tool for understanding the timing of COVID-19 waves in relation to external events.</p>
 			</p>
 
-			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
-			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./imgs/final_3.jpeg" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    Flowing Timeline (Case Trends Over Time)
 				</figcaption>
 			</figure>
 
 			<p>
-				Design Rationale for Sketch 3:
+                <strong>Concept:</strong>
+                <p>A Line Plot where each wave of infections blends seamlessly into the next in a sequential manner, with different colors representing each major surge (e.g., Delta, Omicron).</p>
+
+                <strong>Strengths:</strong>
+                <ul>
+                    <li>Aesthetic and storytelling-friendly—it conveys the organic, fluid nature of a pandemic better than rigid charts.</li>
+                    <li>Clearly shows how different waves relate to each other—viewers can see which surges were biggest.</li>
+                    <li>More readable than a spiral—since the x-axis still follows a traditional timeline format, but with a more engaging shape.</li>
+                    <li>Can be annotated with key moments (e.g., lockdowns, mask mandates, vaccine approvals) to explain why waves changed over time.</li>
+                </ul>
+
+                <strong>Weaknesses:</strong>
+                <ul>
+                    <li>More analytical—the familiar line plot + timeline format may make it less visually striking at a glance.</li>
+                    <li>Requires thoughtful color choices to ensure different waves are distinguishable without overwhelming the viewer.</li>
+                    <li>Some viewers may need a moment to understand how it works.</li>
+                </ul>
+
+                <strong>Why This is an Improvement Over the Spiral:</strong>
+                <p>The combined timeline + line retains a sense of movement, like the spiral, but without the visual confusion. The left-to-right format means trends unfold naturally, and the fluid curves help communicate the wave-like nature of the pandemic, along with timeline information without distorting the data.</p>
 			</p>
 
-			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
-			</ul>
 		</section>
 
 		<section>
