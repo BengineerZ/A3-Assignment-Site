@@ -277,17 +277,34 @@
 		</section>
 
 		<section>
-			<h2>Design Process & Design Decisions</h2>
+			<h2>Design Process, Design Decisions and Reflections</h2>
 
-			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
+            <p>
+        The choice to implement a radial bar chart rather than a linear or spiral visualization (as in the sketches) was driven by creating a compelling yet functionally clear representation of COVID-19 trends over time. Traditional time-series line charts, while effective for direct numerical comparisons, can sometimes fail to convey the repetitive, seasonal nature of pandemics, where peaks and valleys recur in similar timeframes each year. The radial format takes advantage of the human tendency to recognize circular and cyclical patterns, making it easier to compare waves of infection across different years. Instead of forcing the viewer to scan horizontally along a timeline, the radial structure compresses time into a visually compact, continuous loop, preserving both temporal progression and periodical relationships in a single, glanceable format. This is a key, visually striking aspect of the NYT visualization that I wanted to preserve. The previous ideation stages were helpful in this regard.
+      </p>
+
+      <p>
+        A key reason for avoiding a spiral visualization—despite its natural ability to convey cyclical patterns—was the distortion of scale that occurs as the spiral tightens toward the center. This inward compression makes it difficult to accurately compare early waves of the pandemic with later ones, as the visual space allotted to earlier months becomes increasingly narrow. In contrast, a radial bar chart maintains uniform spacing, ensuring that each week retains equal visual representation. This prevents artificial data crowding in the center, making it easier to distinguish early-stage outbreaks from later, more severe waves. Furthermore, bar length is a strong perceptual encoding (compared to area or curvature), it allows for quick and intuitive comparisons of case volumes across weeks and years, especially when bars are colocated. This improves over the NYT plot, where comparisons across years are made more challenging across disparate parts of the spiral.
+      </p>
+
+      <p>
+        Beyond the general structure, several critical design choices were made to enhance interpretability and usability. The color-coding by year ensures that each pandemic wave remains visually distinct, allowing users to track trends across multiple years without ambiguity. This also helps highlight seasonal patterns, such as whether winter surges consistently occurred or if certain variants drove larger outbreaks at specific times. The color scheme was chosen to be more neutral, as compared to the aggressive (purely) red color scheme in the NYT plot. All bars have a black outline to make each one visually distinct at a glance. Polar grid lines and radial labels were incorporated to serve as visual scaffolding, ensuring that users can orient themselves in the dataset without struggling to locate specific months or weeks. In addition, adding some more numerical information into the plot improves credibility, and allows data enthusiastic readers to engage better with the actual, raw data. One challenge with radial charts is that label placement can become cluttered, particularly near the center where values are smaller; to mitigate this, only essential labels were included, with additional annotations placed strategically to highlight significant trends.
+      </p>
+
+      <p>
+        The radial format also encourages better engagement and storytelling. Unlike traditional bar charts, which often feel rigid and linear, a radial bar chart naturally draws the eye toward the center and outward, creating an almost organic flow that mimics how pandemics behave—expanding and contracting in unpredictable bursts. This design is not only more aesthetically compelling but also improves comprehension by allowing users to see long-term trends in a visually cohesive way. The spacing between bars was carefully chosen to prevent overlap or blending, ensuring that individual weeks remain clearly distinguishable.
+      </p>
+
+      <p>
+        The pun present in the original visualization is not lost in this case. The same notion of the pandemic 'spiraling out of control' can still be made in this plot, through the medium of interactive data visualization. By allowing users to slide through the evolution of the pandemic, each wave becomes clear. In particular, the spiral-shaped spikes on the plot evoke a sense of urgency and intensity associated with the pandemic.
+      </p>
+
+      <p>
+        In summary, the radial bar chart preserves the cyclical nature of COVID-19 while avoiding the pitfalls of spirals or linear charts, making it an ideal balance between engagement and analytical clarity. The choice of bar height as the primary encoding simplifies comparisons across time, while color, radial labels, and annotations provide the necessary context for effective data interpretation. This visualization is particularly useful for highlighting recurring pandemic trends, reinforcing how case surges evolved over different timeframes, and making complex epidemiological data more digestible to a general audience.
       </p>
 
       <h3>Reflection</h3>
 
-      <p>
-        WRITE YOUR FINAL REFLECTION HERE.
-      </p>
 		</section>
 	</main>
 </body>
