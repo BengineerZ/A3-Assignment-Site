@@ -29,20 +29,115 @@
 				Insights about the data/visualization and Design Critique:
 			</p>
 
-            The New York Times’ visualization effectively illustrates the rapid rise and peak of COVID-19 cases during the Omicron wave. The time-series format clearly highlights trends over time, allowing viewers to easily compare the surge to previous waves. The color choice, likely intended to evoke urgency, reinforces the significance of the data. Additionally, the smooth curve representation reduces visual noise, making trends more accessible to a general audience.
+            <p>The New York Times’ visualization effectively illustrates the rapid rise and peak of COVID-19 cases during the pandemic. The time-series format clearly highlights trends over time, allowing viewers to easily compare the surge to previous waves. The color choice, likely intended to evoke urgency, reinforces the significance of the data. Additionally, the smooth curve representation reduces visual noise, making trends more accessible to a general audience.</p>
 
-            One of the most distinctive features of this visualization is its spiral design—an unconventional approach to representing COVID-19 case trends over time. This format immediately captures attention and emphasizes the cyclical nature of infection surges. The spiral’s compact layout allows for a dense yet visually striking presentation, distinguishing it from traditional linear time-series charts. Furthermore, variations in color intensity effectively highlight peak infection periods, reinforcing the dramatic spikes in cases.
-            However, there are several areas where the visualization could be improved. First, while the chosen color scheme is striking, it may contribute to an unnecessary sense of alarm. A more neutral or diverging color palette could enhance readability while maintaining clarity. Second, the lack of contextual markers—such as policy changes, vaccination rollouts, or the emergence of new variants—makes it difficult to correlate case trends with real-world events. Including these annotations would provide essential context for viewers. Third, the y-axis scale could be more explicitly labeled to prevent potential misinterpretation of case numbers. Lastly, the overall layout could be refined to guide the reader’s eye more intuitively, ensuring that key takeaways are immediately clear.
+            <p>One of the most distinctive features of this visualization is its spiral design—an unconventional approach to representing COVID-19 case trends over time. This format immediately captures attention and emphasizes the cyclical nature of infection surges. The spiral’s compact layout allows for a dense yet visually striking presentation, distinguishing it from traditional linear time-series charts. Furthermore, variations in color intensity effectively highlight peak infection periods, reinforcing the dramatic spikes in cases.</p>
 
-            The spiral design, while visually engaging, presents readability challenges. Unlike a linear or bar chart, it makes it difficult to precisely compare case numbers across different time periods. The placement of data points along a curved path can obscure exact values, reducing the accuracy of trend tracking. Additionally, as data points spiral inward, earlier case counts become compressed and harder to distinguish. This format may also require additional cognitive effort from viewers unfamiliar with radial visualizations. A more conventional time-series line chart or a small-multiple approach could offer clearer comparisons between COVID-19 waves while preserving visual impact.
+            <p>However, there are several areas where the visualization could be improved. First, while the chosen color scheme is striking, it may contribute to an unnecessary sense of alarm. A more neutral or diverging color palette could enhance readability while maintaining clarity. Second, the lack of contextual markers—such as policy changes, vaccination rollouts, or the emergence of new variants—makes it difficult to correlate case trends with real-world events. Including these annotations would provide essential context for viewers. Third, the y-axis scale could be more explicitly labeled to prevent potential misinterpretation of case numbers. Lastly, the overall layout could be refined to guide the reader’s eye more intuitively, ensuring that key takeaways are immediately clear.</p>
 
-            The New York Times’ spiral visualization sparked considerable debate among the public and data visualization experts and bloggers. Critics argued that the spiral layout hindered accurate comparisons over time and made it harder to perceive overarching trends, suggesting that a linear chart might have been more effective. Concerns were also raised about the spiral’s off-center design, which could distort data representation and complicate interpretation. Conversely, supporters praised the spiral for its visual impact and its ability to convey the recurring nature of pandemic waves. They noted that its unique presentation drew readers’ attention and encapsulated the repetitive experience of the pandemic. This discussion underscores the delicate balance between aesthetics and clarity in data visualization, emphasizing the need to consider both design and functionality to effectively communicate complex information to the public.
+            <p>The spiral design, while visually engaging, presents readability challenges. Unlike a linear or bar chart, it makes it difficult to precisely compare case numbers across different time periods. The placement of data points along a curved path can obscure exact values, reducing the accuracy of trend tracking. Additionally, as data points spiral inward, earlier case counts become compressed and harder to distinguish. This format may also require additional cognitive effort from viewers unfamiliar with radial visualizations. A more conventional time-series line chart or a small-multiple approach could offer clearer comparisons between COVID-19 waves while preserving visual impact.</p>
+
+            <p>The New York Times’ spiral visualization sparked considerable debate among the public and data visualization experts and bloggers (<a href="https://www.practicalreporting.com/blog/2022/1/11/why-the-nyt-spiral-graph-is-a-failure-and-a-success?utm_source=chatgpt.com">practicalreporting.com</a>, <a href="https://eagereyes.org/blog/2022/the-ny-times-covid-spiral-is-off-center?utm_source=chatgpt.com">EagerEyes</a>). Critics argued that the spiral layout hindered accurate comparisons over time and made it harder to perceive overarching trends, suggesting that a linear chart might have been more effective. Concerns were also raised about the spiral’s off-center design, which could distort data representation and complicate interpretation. Conversely, supporters praised the spiral for its visual impact and its ability to convey the recurring nature of pandemic waves. They noted that its unique presentation drew readers’ attention and encapsulated the repetitive experience of the pandemic. This discussion underscores the delicate balance between aesthetics and clarity in data visualization, emphasizing the need to consider both design and functionality to effectively communicate complex information to the public.</p>
 
 			
 		</section>
 
 		<section>
 			<h2>Visualization Sketches</h2>
+
+            The idea behind the following sketches is to produce visualizations which preserve the positive aspects of the NYT visualization, whilst overcoming some of the issues associated with it. First, I decided to list some visualization ideas, and think about the positive/negatives of each:
+
+            <ol>
+                <li>
+                    <strong>Layered Line Chart with Color Highlight</strong>
+                    <p><em>Concept:</em> A traditional line chart with multiple waves of COVID-19 cases stacked over time, with color gradients emphasizing peaks. Each wave (Delta, Omicron, etc.) could be labeled for clarity.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Easier trend comparison than a spiral.</li>
+                        <li>Accurate time-based reading (left to right).</li>
+                        <li>Highlights peaks while keeping earlier data readable.</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Less visually striking than a spiral, but clearer for interpretation.</p>
+                </li>
+                <li>
+                    <strong>Small Multiple Line Charts</strong>
+                    <p><em>Concept:</em> Instead of one big chart, separate mini-line charts for each COVID-19 wave (e.g., Alpha, Delta, Omicron) arranged in a grid or stacked format. Each chart shows the case rise and fall within its time period.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Prevents data clutter (each wave is isolated).</li>
+                        <li>Makes direct comparisons clearer.</li>
+                        <li>Allows additional annotations (e.g., policy changes, vaccine rollouts).</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Requires multiple charts, which might take up more space.</p>
+                </li>
+                <li>
+                    <strong>Radial Bar Chart (Circular Histogram)</strong>
+                    <p><em>Concept:</em> Instead of a spiral, a circular bar chart where each bar represents a week or month of cases. The bars extend radially outward, with higher case counts pushing further from the center.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Keeps a unique circular aesthetic (like the original spiral).</li>
+                        <li>Easier to compare case heights than the twisting spiral path.</li>
+                        <li>Maintains the sense of cyclical waves but makes comparisons clearer.</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Still requires effort to read compared to a simple line chart.</p>
+                </li>
+                <li>
+                    <strong>Stacked Area Chart</strong>
+                    <p><em>Concept:</em> A stacked area chart showing different COVID-19 waves over time, with distinct colors for each major surge. The chart would emphasize the relative size and duration of each wave.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Provides a smooth, continuous representation of case trends.</li>
+                        <li>Color differentiation helps separate waves for clarity.</li>
+                        <li>Clearly shows cumulative impact over time.</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Can sometimes appear cluttered if too many colors are used.</p>
+                </li>
+                <li>
+                    <strong>Heatmap Calendar (Github style!)</strong>
+                    <p><em>Concept:</em> A calendar-style heatmap where each day (or week) is a square, and color intensity represents case numbers. Similar to GitHub's contribution heatmaps, this approach visualizes trends over time in an intuitive, structured grid.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Great for daily/weekly case tracking in a familiar format.</li>
+                        <li>Color-coding highlights surges while keeping data easy to scan.</li>
+                        <li>Allows annotations on specific days (e.g., policy changes, holidays).</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Less effective for showing broader trends at a quick glance.</p>
+                </li>
+                <li>
+                    <strong>Slope Graph (Comparing Waves)</strong>
+                    <p><em>Concept:</em> A slope graph that connects peaks of each COVID-19 wave with lines sloping up/down to indicate severity changes over time. This helps highlight whether new waves were higher or lower than previous ones.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Clearly shows wave severity comparisons without unnecessary complexity.</li>
+                        <li>Emphasizes the relative growth or decline between waves.</li>
+                        <li>Works well with minimal labeling and annotations.</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Not ideal for tracking granular day-to-day case numbers.</p>
+                </li>
+                <li>
+                    <strong>Violin Plot (Case Distributions Over Time)</strong>
+                    <p><em>Concept:</em> A violin plot to represent the distribution of daily cases across different time periods. The width of each "violin" shape represents the density of case counts, making it clear where values clustered most.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Great for showing variability and not just peak values.</li>
+                        <li>Can reveal whether cases had long tails or short bursts.</li>
+                        <li>Visually engaging while preserving statistical accuracy.</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Might require explanation for audiences unfamiliar with violin plots. This may be challenging to make interactive.</p>
+                </li>
+                <li>
+                    <strong>Streamgraph (Flowing Case Trends Over Time)</strong>
+                    <p><em>Concept:</em> A streamgraph (similar to a stacked area chart but with a fluid, organic shape) to emphasize the continuous rise and fall of cases. This would create a wave-like aesthetic while still maintaining readability.</p>
+                    <p><em>Why This Works:</em></p>
+                    <ul>
+                        <li>Maintains the cyclical feel of the original spiral but with more clarity.</li>
+                        <li>Great for storytelling and visual impact.</li>
+                        <li>Highlights case growth in a smooth, flowing way.</li>
+                    </ul>
+                    <p><em>Possible Drawback:</em> Requires careful labeling to avoid confusion. Generally stream graphs are not easy to understand at first glance.</p>
+                </li>
+            </ol>
+
 
       <figure>
 				<img src="IMAGE_FILENAME" alt="" />
